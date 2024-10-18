@@ -1,0 +1,48 @@
+{
+  "name": "semana2",
+  "version": "1.0.0",
+  "description": "Actividad de la semana 2 de arquitectura de servidores ",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/bin/www.js",
+    "dev": "nodemon src/app.ts",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dmarmijosa/arquitectura-servidores-semana2.git"
+  },
+  "keywords": [
+    "#express",
+    "#api-rest",
+    "#mongoose"
+  ],
+  "author": "Danny Armijos",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dmarmijosa/arquitectura-servidores-semana2/issues"
+  },
+  "homepage": "https://github.com/dmarmijosa/arquitectura-servidores-semana2#readme",
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.1",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.7.1"
+  },
+  "devDependencies": {
+    "@types/bcrypt": "^5.0.2",
+    "@types/express": "^5.0.0",
+    "@types/jest": "^29.5.13",
+    "@types/jsonwebtoken": "^9.0.7",
+    "@types/node": "^22.7.5",
+    "@types/supertest": "^6.0.2",
+    "jest": "^29.7.0",
+    "nodemon": "^3.1.7",
+    "supertest": "^7.0.0",
+    "ts-jest": "^29.2.5",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.6.3"
+  }
+}
