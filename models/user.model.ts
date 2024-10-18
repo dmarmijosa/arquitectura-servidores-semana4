@@ -7,6 +7,7 @@ export interface IUser extends Document {
   password: string;
   bio?: string;
   active: boolean;
+  activationToken?: string;
   createdAt?: Date;
   updatedAt?: Date;
   comparePassword(candidatePassword: string): Promise<boolean>;
@@ -19,6 +20,7 @@ const UserSchema: Schema = new Schema(
     password: { type: String, required: true },
     bio: { type: String },
     active: { type: Boolean, default: false },
+    activationToken: { type: String },
   },
   {
     timestamps: true, 
@@ -37,7 +39,6 @@ UserSchema.pre<IUser>('save', async function (next) {
   }
 });
 
-// Método para comparar contraseñas
 UserSchema.methods.comparePassword = async function (candidatePassword: string): Promise<boolean> {
   return bcrypt.compare(candidatePassword, this.password);
 };

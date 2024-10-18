@@ -6,7 +6,7 @@
   "scripts": {
     "build": "tsc",
     "start": "node dist/bin/www.js",
-    "dev": "nodemon src/app.ts",
+    "dev": "ts-node ./bin/www.ts",
     "test": "jest"
   },
   "repository": {
@@ -26,6 +26,7 @@
   "homepage": "https://github.com/dmarmijosa/arquitectura-servidores-semana2#readme",
   "dependencies": {
     "bcrypt": "^5.1.1",
+    "crypto": "^1.0.1",
     "dotenv": "^16.4.5",
     "express": "^4.21.1",
     "jsonwebtoken": "^9.0.2",

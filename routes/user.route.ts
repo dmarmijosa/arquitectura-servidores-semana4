@@ -1,5 +1,5 @@
 import { Router } from 'express';
-import { registerUser, loginUser } from '../controllers/user.controller';
+import { registerUser, loginUser, activateUser } from '../controllers/user.controller';
 
 const router = Router();
 
@@ -9,4 +9,5 @@ router.post('/', registerUser);
 // Ruta para login de usuario
 router.post('/login', loginUser);
 
+router.get('/activate/:activationToken', activateUser);
 export default router;
