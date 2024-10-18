@@ -1,7 +1,7 @@
 {
 	"info": {
-		"_postman_id": "61b2bca7-76c5-483f-8b68-8cd585b8d86b",
-		"name": "SEMANA 3 ARQUITECTURA SERVIDORES",
+		"_postman_id": "6d3fdc1a-c225-4e49-bae5-87724f6239fc",
+		"name": "SEMANA 4 ARQUITECTURA SERVIDORES",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
 		"_exporter_id": "30811333"
 	},
@@ -144,7 +144,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n  \"name\": \"John Doe\",\n  \"email\": \"johndoe@example.com\",\n  \"password\": \"securePassword123\",\n  \"bio\": \"A software engineer passionate about backend development.\"\n}",
+					"raw": "{\n  \"name\": \"John Doe\",\n  \"email\": \"example@example.com\",\n  \"password\": \"securePassword123\",\n  \"bio\": \"A software engineer passionate about backend development.\"\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -173,7 +173,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n  \"email\": \"johndoe@example.com\",\n  \"password\": \"securePassword123\"\n}",
+					"raw": "{\n  \"email\": \"example@example.com\",\n  \"password\": \"securePassword123\"\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -191,6 +191,28 @@
 						"api",
 						"users",
 						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8000/api/users/activate/dba7e0b5-15c5-4264-8723-31be3a0a8b50",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/api/users/activate/dba7e0b5-15c5-4264-8723-31be3a0a8b50",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"users",
+						"activate",
+						"dba7e0b5-15c5-4264-8723-31be3a0a8b50"
 					]
 				}
 			},

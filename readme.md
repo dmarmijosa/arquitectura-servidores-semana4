@@ -35,8 +35,8 @@ Esta API permite realizar operaciones CRUD (crear, leer, actualizar y eliminar) 
 1. **Clona este repositorio**:
 
    ```bash
-   git clone https://github.com/dmarmijosa/arquitectura-servidores-semana3
-   cd semana2
+   git clone https://github.com/dmarmijosa/arquitectura-servidores-semana4
+   cd semana4
    ```
 
 2. **Instala las dependencias**:
@@ -209,22 +209,31 @@ posts-api/
   - **200 OK**: Devuelve el token JWT.
   - **401 Unauthorized**: Si las credenciales son incorrectas.
 
+### 8. Activar usuario
+
+- **Método**: `GET`
+- **URL**: `/api/users/activate/:activationToken`
+- **Descripción**: Activa la cuenta de un usuario registrado utilizando el token de activación proporcionado.
+- **Respuestas**:
+  - **200 OK**: Devuelve un mensaje de éxito indicando que la cuenta fue activada.
+  - **400 Bad Request**: Si el token de activación es inválido o no se encuentra el usuario.
+
 ## Colección de Postman
 
-La colección de Postman se encuentra en la carpeta `postman/SEMANA 2 ARQUITECTURA SERVIDORES.postman_collection`. Contiene peticiones preconfiguradas para todos los endpoints mencionados.
+La colección de Postman se encuentra en la carpeta `postman/SEMANA 4 ARQUITECTURA SERVIDORES.postman_collection`. Contiene peticiones preconfiguradas para todos los endpoints mencionados.
 
 **Cómo importar la colección en Postman**:
 
 1. Abre Postman.
 2. Haz clic en **Import**.
-3. Selecciona el archivo `SEMANA 3 ARQUITECTURA SERVIDORES.postman_collection` desde la carpeta `postman`.
+3. Selecciona el archivo `SEMANA 4 ARQUITECTURA SERVIDORES.postman_collection` desde la carpeta `postman`.
 4. La colección aparecerá en tu lista de colecciones.
 
 ## Demostración en video
 
 Puedes ver una demostración del funcionamiento de la API y una explicación del código en el siguiente enlace:
 
-[Enlace al video de demostración](https://youtu.be/S7uIlrEx0WQ)
+[Enlace al video de demostración](https://youtu.be/9GIq2Ot0cbc)
 
 ## Autor
 
